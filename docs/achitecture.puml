@@ -1,0 +1,12 @@
+@startuml
+actor Client
+participant "Client Thread" as CT
+participant "TSLogger API" as L
+participant "Logger Worker" as W
+Client -> CT: send message
+CT -> L: TSLogger::instance().info(msg)
+L -> L: enqueue message (ThreadSafeQueue)
+L -> W: notify
+W -> W: pop messages
+W -> file: write log
+@enduml
