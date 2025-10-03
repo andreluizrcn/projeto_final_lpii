@@ -6,6 +6,35 @@
 #include <stdexcept>
 #include <thread>
 
+// ThreadSafeQueue implementation
+void ThreadSafeQueue::push(const std::string &item) {
+  std::lock_guard<std::mutex> lock(mtx_);
+  queue_.push(item);
+  cv_.notify_one();
+}
+
+std::string ThreadSafeQueue::wait_pop() {
+  std::unique_lock<std::mutex> lock(mtx_);
+  cv_.wait(lock, [this] { return !queue_.empty() || done_; });
+  if (queue_.empty())
+    return "";
+  std::string item = queue_.front();
+  queue_.pop();
+  return item;
+}
+
+void ThreadSafeQueue::notify_done() {
+  std::lock_guard<std::mutex> lock(mtx_);
+  done_ = true;
+  cv_.notify_all();
+}
+
+bool ThreadSafeQueue::empty() const {
+  std::lock_guard<std::mutex> lock(mtx_);
+  return queue_.empty();
+}
+
+// TSLogger implementation
 TSLogger &TSLogger::instance() {
   static TSLogger logger;
   return logger;
@@ -22,7 +51,7 @@ void TSLogger::init(const std::string &logfile, bool append) {
   std::lock_guard<std::mutex> lg(file_mtx_);
   ofs_.open(logfile, append ? std::ios::app : std::ios::trunc);
   if (!ofs_.is_open())
-    throw std::runtime_error("Failed to open log file");
+    throw std::runtime_error("Failed to open log file: " + logfile);
 
   running_ = true;
   worker_ = std::thread(&TSLogger::worker_thread_fn, this);
@@ -63,8 +92,8 @@ void TSLogger::log(LogLevel level, const std::string &msg) {
 
   std::ostringstream oss;
   oss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S") << " [T"
-      << std::this_thread::get_id() << "] "
-      << "[" << level_to_string(level) << "] " << msg << '\n';
+      << std::this_thread::get_id() << "] " << "[" << level_to_string(level)
+      << "] " << msg << '\n';
 
   queue_.push(oss.str());
 }
@@ -81,8 +110,7 @@ void TSLogger::worker_thread_fn() {
     if (line.empty()) {
       if (!running_ && queue_.empty())
         break;
-      if (queue_.empty())
-        continue;
+      continue;
     }
     std::lock_guard<std::mutex> lg(file_mtx_);
     if (ofs_.is_open())

@@ -1,0 +1,14 @@
+@startuml
+title Diagrama de Sequência - Chat TCP (v2-cli)
+
+actor User
+participant "Cliente CLI" as C
+participant "Servidor" as S
+participant "TSLogger" as L
+
+User -> C: Digita mensagem
+C -> S: Envia mensagem (TCP)
+S -> L: Log de recebimento
+S -> C: Resposta (echo)
+C -> L: Log da resposta recebida
+@enduml

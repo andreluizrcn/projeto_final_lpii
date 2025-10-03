@@ -1,0 +1,6 @@
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/libtslog.dir
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/server.dir
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/client.dir
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/test_cli.dir
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/edit_cache.dir
+/home/alkaleus/Documentos/UNIVERSIDADE/P6/LPII/projeto_final/build/CMakeFiles/rebuild_cache.dir

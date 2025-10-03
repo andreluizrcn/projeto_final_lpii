@@ -72,5 +72,24 @@ Em cada etapa, foi utilizado **auxílio de LLMs (IA)** para revisar o código e 
 
 
 
+------------------------------------------------------------------------------------------------
 
+
+## Etapa 2 — Protótipo CLI de Comunicação (v2-cli)
+
+### Funcionalidades implementadas
+- Servidor TCP concorrente (porta 8080)
+- Cliente CLI que envia mensagens
+- Servidor retransmite mensagens (echo)
+- Logging integrado com libtslog
+- Suporte a múltiplos clientes simultâneos (threads)
+- Scripts de teste automatizado
+
+### Como compilar
+
+#### Opção 1: CMake
+mkdir -p build && cd build
+cmake ..
+make
+cd ..
 

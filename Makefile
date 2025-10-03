@@ -1,21 +1,17 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -pthread
-BUILD_DIR = build
-INC_DIR = include
+INC = -Iinclude
 
-TARGET = $(BUILD_DIR)/test_cli
-SRCS = src/libtslog.cpp tests/test_cli.cpp
-OBJS = $(SRCS:%.cpp=$(BUILD_DIR)/%.o)
+all: server client test_cli
 
-all: $(TARGET)
+server: src/server.cpp src/libtslog.cpp
+	$(CXX) $(CXXFLAGS) $(INC) -o server src/server.cpp src/libtslog.cpp
 
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+client: src/client.cpp src/libtslog.cpp
+	$(CXX) $(CXXFLAGS) $(INC) -o client src/client.cpp src/libtslog.cpp
 
-$(BUILD_DIR)/%.o: %.cpp
-	@mkdir -p $(dir $@)
-	$(CXX) $(CXXFLAGS) -I$(INC_DIR) -c $< -o $@
+test_cli: tests/test_cli.cpp src/libtslog.cpp
+	$(CXX) $(CXXFLAGS) $(INC) -o test_cli tests/test_cli.cpp src/libtslog.cpp
 
 clean:
-	rm -rf $(BUILD_DIR) *.log
-
+	rm -f server client test_cli *.log
