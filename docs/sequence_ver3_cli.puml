@@ -1,0 +1,15 @@
+@startuml
+title Diagrama de Sequência - Sistema Cliente/Servidor com Logging
+
+actor User
+participant "Cliente CLI" as C
+participant "Servidor TCP" as S
+participant "TSLogger" as L
+
+User -> C: Digita mensagem
+C -> S: Envia mensagem (TCP)
+S -> L: Log de recebimento
+S -> C: Retorna eco da mensagem
+C -> L: Log da resposta recebida
+@enduml
+

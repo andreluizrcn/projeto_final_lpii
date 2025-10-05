@@ -1,0 +1,111 @@
+2025-10-05 18:26:34 [T140008231864192] [INFO] Servidor iniciado na porta 8080
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008149219008] [INFO] Mensagem recebida: Test 1
+2025-10-05 18:26:35 [T140008149219008] [INFO] Mensagem enviada de volta: Test 1
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008149219008] [INFO] Mensagem recebida: Test 6
+2025-10-05 18:26:35 [T140008149219008] [INFO] Mensagem enviada de volta: Test 6
+2025-10-05 18:26:35 [T140008140826304] [INFO] Mensagem recebida: Test 3
+2025-10-05 18:26:35 [T140008140826304] [INFO] Mensagem enviada de volta: Test 3
+2025-10-05 18:26:35 [T140008004515520] [INFO] Mensagem recebida: Test 2
+2025-10-05 18:26:35 [T140008132433600] [INFO] Mensagem recebida: Test 4
+2025-10-05 18:26:35 [T140008132433600] [INFO] Mensagem enviada de volta: Test 4
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 8
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 8
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem recebida: Test 5
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem enviada de volta: Test 5
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 9
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008004515520] [INFO] Mensagem enviada de volta: Test 2
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 9
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008004515520] [INFO] Mensagem recebida: Test 14
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 11
+2025-10-05 18:26:35 [T140008004515520] [INFO] Mensagem enviada de volta: Test 14
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 11
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem recebida: Test 15
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem enviada de volta: Test 15
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 7
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 13
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 13
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 7
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 12
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 12
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 17
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 17
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 10
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 10
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 16
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 16
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 22
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 22
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 19
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 21
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 21
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem recebida: Test 20
+2025-10-05 18:26:35 [T140008115648192] [INFO] Mensagem enviada de volta: Test 20
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 19
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 32
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 32
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 18
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 18
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 24
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 26
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 26
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 24
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 34
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 34
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 36
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 36
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 29
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 29
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 38
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem enviada de volta: Test 38
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 25
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 23
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 23
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 25
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 33
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 33
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008231864192] [INFO] Novo cliente conectado.
+2025-10-05 18:26:35 [T140008140826304] [INFO] Mensagem recebida: Test 42
+2025-10-05 18:26:35 [T140008140826304] [INFO] Mensagem enviada de volta: Test 42
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem recebida: Test 27
+2025-10-05 18:26:35 [T140008107255488] [INFO] Mensagem enviada de volta: Test 27
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem recebida: Test 31
+2025-10-05 18:26:35 [T140008098862784] [INFO] Mensagem recebida: Test 28
+2025-10-05 18:26:35 [T140008124040896] [INFO] Mensagem enviada de volta: Test 31
+2025-10-05 18:26:35 [T140008149219008] [INFO] Mensagem recebida: Test 35

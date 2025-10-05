@@ -9,6 +9,22 @@
 #define PORT 8080
 #define SERVER "127.0.0.1"
 
+// Classe RAII para gerenciar socket
+class SocketGuard {
+public:
+  explicit SocketGuard(int sock) : sock_(sock) {}
+  ~SocketGuard() {
+    if (sock_ >= 0) {
+      close(sock_);
+    }
+  }
+  SocketGuard(const SocketGuard &) = delete;
+  SocketGuard &operator=(const SocketGuard &) = delete;
+
+private:
+  int sock_;
+};
+
 int main(int argc, char *argv[]) {
   if (argc < 2) {
     std::cerr << "Uso: " << argv[0] << " <mensagem>\n";
@@ -28,7 +44,9 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  struct sockaddr_in serv_addr{};
+  SocketGuard guard(sock);
+
+  sockaddr_in serv_addr{};
   serv_addr.sin_family = AF_INET;
   serv_addr.sin_port = htons(PORT);
 
@@ -47,14 +65,15 @@ int main(int argc, char *argv[]) {
   TSLogger::instance().info("Mensagem enviada: " + msg);
 
   char buffer[1024] = {0};
-  int valread = read(sock, buffer, 1024);
+  int valread = read(sock, buffer, sizeof(buffer));
   if (valread > 0) {
     std::string response(buffer, valread);
     TSLogger::instance().info("Resposta recebida: " + response);
     std::cout << "Resposta: " << response << '\n';
+  } else {
+    TSLogger::instance().warn("Nenhuma resposta recebida do servidor.");
   }
 
-  close(sock);
   TSLogger::instance().shutdown();
   return 0;
 }
