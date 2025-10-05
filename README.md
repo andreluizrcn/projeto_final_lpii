@@ -336,20 +336,6 @@ wait
     - `pthread` (POSIX threads)
     - Sockets POSIX (arpa/inet.h)
 
-**Nota:** Para Windows, ajustar includes de socket para Winsock2
-
-## Autor
-
-**Nome:** [Seu Nome]  
-**Matrícula:** [Sua Matrícula]  
-**Disciplina:** Programação Concorrente  
-**Professor:** Bidu  
-**Período:** 2025.1
-
-## Repositório
-
-**GitHub:** [URL do seu repositório]
-
 ### Tags de Versão
 
 - `v1-logging` - Biblioteca libtslog + arquitetura
